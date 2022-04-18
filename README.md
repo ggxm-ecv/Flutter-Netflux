@@ -1,6 +1,10 @@
 # Netflux
 
 A new Flutter project.
+Netflux is a site almost resembling its almost namesake.
+School project completed in 2022.
+
+Team : [Vincent Manach](https://github.com/Vincent-Manach) | [Gautier Maire](https://github.com/ggxm)
 
 ## Getting Started
 
