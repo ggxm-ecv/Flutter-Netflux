@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
     userStream = netfluxFirebaseUserStream()
       ..listen((user) => initialUser ?? setState(() => initialUser = user));
     Future.delayed(
-        Duration(seconds: 1), () => setState(() => displaySplashImage = false));
+        Duration(seconds: 10), () => setState(() => displaySplashImage = false));
   }
 
   @override
@@ -65,6 +65,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Netflux',
       localizationsDelegates: [
         FFLocalizationsDelegate(),
@@ -82,7 +83,7 @@ class _MyAppState extends State<MyApp> {
               color: Colors.transparent,
               child: Builder(
                 builder: (context) => Image.asset(
-                  'assets/images/21.jpg',
+                  'assets/images/splash.gif',
                   fit: BoxFit.fitWidth,
                 ),
               ),
